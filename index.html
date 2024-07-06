@@ -122,7 +122,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/05/julyfive/" data-id="cly8sy9f400027gvdfaajawux" data-title="记七月五号的考研夏令营" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="http://example.com/2024/07/05/julyfive/" data-id="cly9n95ew00026kvde50o2ypn" data-title="记七月五号的考研夏令营" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -178,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/01/Exam/" data-id="cly8sy9f100017gvd2gp88lfr" data-title="Exam" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="http://example.com/2024/07/01/Exam/" data-id="cly9n95er00006kvd4tum61b0" data-title="Exam" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -229,7 +229,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/06/11/photo/" data-id="cly8sy9f800087gvd3oa63ln9" data-title="photo" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="http://example.com/2024/06/11/photo/" data-id="cly9n95ey00046kvd77s2hplp" data-title="photo" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -237,110 +237,6 @@
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/photoTest/" rel="tag">photoTest</a></li></ul>
-
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-NewIn" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/06/11/NewIn/" class="article-date">
-  <time class="dt-published" datetime="2024-06-11T13:06:41.000Z" itemprop="datePublished">2024-06-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/06/11/NewIn/">实验二</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><strong>计算机网络</strong></p>
-<p><strong>实验报告</strong></p>
-<p><strong>班级： 计221</strong>        </p>
-<p><strong>姓名： 邸相耀</strong>        </p>
-<p><strong>学号： 225392</strong>       </p>
-<p><strong>实验二：设置虚拟局域网（VLAN）</strong></p>
-<p>班级：计221		学号：225392		姓名：邸相耀</p>
-<p><strong>一、实验目的：</strong></p>
-<ol>
-<li><p>理解虚拟局域网的概念。 </p>
-</li>
-<li><p>了解 VLAN 技术在交换式以太网中的使用。 </p>
-</li>
-<li><p>理解 VLAN 在数据链路层隔离广播域的作用。</p>
-</li>
-</ol>
-<p><strong>二、实验要求：</strong></p>
-<p>了解交换机VLAN的工作原理，得到成功建立VLAN的拓扑图和了解交换机的工作原理，并了解802.1Q帧的封装格式。</p>
-<p>三、实验现象分析及结果展示：</p>
-<p>在明白本次实验要做什么之后，清楚了自己的实验目标以及具体实现要求，深入了解学习了VLAN的技术实现方法，开始尝试组建VLAN网络。</p>
-<p>下面是拓扑图：</p>
-<img src="/2024/06/11/NewIn/%E8%AE%A1221-225392-%E9%82%B8%E7%9B%B8%E8%80%80.001.png" class>
-
-
-<p>在两个交换机中ADD两个VLAN，分别是10 VLAN1、20 VLAN2，另外我通过添加一个集线器和一个Server，分别测试了集线器下的两台主机是否可以通过集线器与交换机相连的端口进行VLAN的划分并设置access模式进行连接，以及trunk口下的server，允许两个VLAN中的主机都能与其通讯。</p>
-<p>拓扑图下面的192.168.1.2到1.6以及集线器的属于VLAN1。他们之间可以正常进行通讯。举PC5与PC8的例子来证明：</p>
-<img src="/2024/06/11/NewIn/%E8%AE%A1221-225392-%E9%82%B8%E7%9B%B8%E8%80%80.002.png" class>
-
-<p>上面证明集线器下的主机可以通过交换机对连接集线器这条端口的配置的VLAN进行通讯，和直接连接交换机下的端口设置的主机的原理有异曲同工之妙！</p>
-<p>而PC6和PC5属于两个不同的VLAN，因此通讯失败了：</p>
-<img src="/2024/06/11/NewIn/%E8%AE%A1221-225392-%E9%82%B8%E7%9B%B8%E8%80%80.003.png" class>
-
-<p><code>	</code>现在我们要尝试设置server的trunk来进行不同VLAN都能访问到服务器的测试。</p>
-<img src="/2024/06/11/NewIn/%E8%AE%A1221-225392-%E9%82%B8%E7%9B%B8%E8%80%80.004.png" class>
-
-<p><code>	</code>同样是上面的拓扑图，以PC1、PC2、server为例子，将主机的接口设置为trunk模式，连接server的端口设置为1-1005、PC1设置为VLAN1和server1、PC2设置为VLAN2和server2，我当时思考认为这样设置能够分开两个主机去访问server，但是明显地不行，甚至出现了频繁的Failed，这让我很不解。后面为了排除问题，我将交换机连接PC1的端口设置为除了default、VLAN2、server2之外的所有，仍然不能让PC1和server通讯，之后我勾选了上一步的default，这时，PC1成功的ping通了server。我按照相同的设置，相似的操作配置上了PC2（即选择除了VLAN1、server1之外的所有），这下PC4也能ping通server。但是当我尝试PC1和PC2，问题来了，它们两个也能通，可反向勾选default后，各种都通不了，这里出现了很大的迷惑。下图是实验通讯截图：</p>
-<img src="/2024/06/11/NewIn/%E8%AE%A1221-225392-%E9%82%B8%E7%9B%B8%E8%80%80.005.png" class>
-
-<p><code>	</code>经过上面的操作，我怀疑了VLAN技术是否可以让两个VLAN相互隔离，并两个VLAN都能通讯到同样的一个服务器集群上去（或者是在数据链路层无法实现这个功能）。（这里的问题在网络上搜索未搜索到可靠答案，希望日后能获得有效答案，或者是解决这个问题的另外的方式）</p>
-<p><code>	</code>经过上面的一些操作，我们已经大致明白了access模式以及大致的trunk模式的工作方式。下面尝试在其中抓取802.1Q帧。如下图：</p>
-<img src="/2024/06/11/NewIn/%E8%AE%A1221-225392-%E9%82%B8%E7%9B%B8%E8%80%80.006.png" class>
-
-<p><code>	</code>上图出现了好多ARP协议发的ARP数据报，用来确定IP地址和mac地址，这里的ARP协议我们下一个实验报告内会进行一些分析。</p>
-<p><code>	</code>下面是抓到的ICMP中的802.1Q帧，可见是access模式下发送的VLAN的帧（可能是由于cisco Packet Tracer版本问题，导致未在第一个图中看到有关VLAN虚拟局域网下帧的格式）：</p>
-<img src="/2024/06/11/NewIn/%E8%AE%A1221-225392-%E9%82%B8%E7%9B%B8%E8%80%80.007.png" class>
-<img src="/2024/06/11/NewIn/%E8%AE%A1221-225392-%E9%82%B8%E7%9B%B8%E8%80%80.008.png" class>
-
-<p><strong>四、思考题解答</strong></p>
-<p>1．在未设置VLAN的局域网中，交换机的广播包会正常的广播到所有默认VLAN1的主机上，例如ARP广播包，会在局域网内所有主机发送。</p>
-<p>2．在已经配置好VLAN的局域网中，当一台 PC 发送广播包时，与之连接在同一台交换机上的其他 PC 不一定能接收到该广播包，例如在一个交换机上不同的VLAN中的主机收不到不同VLAN上的广播。</p>
-<p>3.划分VLAN有效提高了一个局域网下的数据信息的安全性，并由于一个虚拟局域网下的VLAN的广播包互不干扰，有效降低了“广播风暴”的影响，提高整个局域网的性能。</p>
-<p><strong>五、实验反思</strong></p>
-<p><code>	</code>经过本次实验，我了解到了VLAN划分的具体操作，理解了其中工作原理，在数据链路层发挥着扩展局域网的功能，发现VLAN技术不仅能提高网络的安全性，通过隔离不同部门或项目组的网络流量，还能提升网络的整体性能，避免因广播风暴而导致的网络拥堵。</p>
-<p><code>	</code>此外，还发现了几个我不懂的地方，这些内容在网上未搜索到有效答案，并可能与之后我们的学习内容密切相关，在今后的学习生活中我会继续尝试自己去解答这些问题。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/06/11/NewIn/" data-id="cly8sy9f800077gvdh1df7olh" data-title="实验二" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/InternetTest/" rel="tag">InternetTest</a></li></ul>
 
 	  <!-- busuanzi_count -->
 
@@ -370,7 +266,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/InternetTest/" rel="tag">InternetTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Think/" rel="tag">Think</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/photoTest/" rel="tag">photoTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" rel="tag">考研夏令营</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Think/" rel="tag">Think</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/photoTest/" rel="tag">photoTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" rel="tag">考研夏令营</a></li></ul>
     </div>
   </div>
 
@@ -380,7 +276,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/InternetTest/" style="font-size: 10px;">InternetTest</a> <a href="/tags/Think/" style="font-size: 10px;">Think</a> <a href="/tags/photoTest/" style="font-size: 10px;">photoTest</a> <a href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" style="font-size: 10px;">考研夏令营</a>
+      <a href="/tags/Think/" style="font-size: 10px;">Think</a> <a href="/tags/photoTest/" style="font-size: 10px;">photoTest</a> <a href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" style="font-size: 10px;">考研夏令营</a>
     </div>
   </div>
 
@@ -411,10 +307,6 @@
         
           <li>
             <a href="/2024/06/11/photo/">photo</a>
-          </li>
-        
-          <li>
-            <a href="/2024/06/11/NewIn/">实验二</a>
           </li>
         
       </ul>
