@@ -1,725 +1,696 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <title>StudyHome</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Xiangyao">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
 <meta property="og:title" content="StudyHome">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://neifeitiii.github.io/index.html">
 <meta property="og:site_name" content="StudyHome">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Xiangyao">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="StudyHome" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
+<meta name="twitter:card" content="summary_large_image">
   
   
   
-<link rel="stylesheet" href="/css/style.css">
+  <title>StudyHome</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"neifeitiii.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
 
   
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?5a5f26e794b259445ca10739b423faee";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-    
 <meta name="generator" content="Hexo 7.2.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">StudyHome</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-          <a class="main-nav-link" href="/">Home</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
         
-          <a class="main-nav-link" href="/about">About</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
         
-      </nav>
-      <nav id="sub-nav">
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
         
         
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-lateAug19" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/08/19/lateAug19/" class="article-date">
-  <time class="dt-published" datetime="2024-08-19T12:57:24.000Z" itemprop="datePublished">2024-08-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/08/19/lateAug19/">End &amp; Start</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>许久没有去写文字，是因为每次思考都在睡前，而我又没有在睡前记住要写些什么的习惯。</p>
-<hr>
-<p>现在已经是暑假在家的最后一天了，其实还是有些迷茫和无助的，不过更多的是以往很常见的离家的怅惘。<br>我几乎一整个暑假都没出去玩，老老实实的在家呆着，既不能说我没有活力，更不能说我喜欢在家里呆着，在这种环境下，难免感觉自己什么地方都没有勇气去追寻。<br>不过也还好，至少也并非是无助的孤岛，至少可以通过各种线上方式与好友交流，解决无聊的处境。<br>况且还有备考教资以及可能存在的考研压力。</p>
-<hr>
-<p>关于新学期，以及返校之后要做什么，更多的考虑首先是考研的具体内容，而且也更应该好好的去准备一下这学期的内容，课程的内容还是蛮有意思的看起来。<br>我也需要想办法学完golang的基本语法，虽然感觉学了没什么用处，但是学了总会有好处的。</p>
-<hr>
-<p>关于吉他和其他业余爱好，我觉得应该是需要继续坚持的，况且对我来说并非没有好处，而且可能很适合去社交，释放一下压力。<br>我有很棒的朋友。</p>
-<hr>
-<p>足够了，就写到这吧。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/08/19/lateAug19/" data-id="cm010o4tm0000y0vddib03rme" data-title="End &amp; Start" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Think/" rel="tag">Think</a></li></ul>
-
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Seven13" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/07/13/Seven13/" class="article-date">
-  <time class="dt-published" datetime="2024-07-13T13:16:39.000Z" itemprop="datePublished">2024-07-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/07/13/Seven13/">居家日记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>今天是完完全全在家的第一天，感觉良好，除了自己脑袋总是略微疼痛，似乎睡觉也不能缓解。<br>这个文章就不加tag了，纯粹的碎碎念。<br>整天呆在家确实有点无聊，不过需要干的事情也不少，可以容忍。<br>蛮好的，每次吃饭吃的都是自家院子里生长的作物，还看到了我那两个抽象的老弟。<br>一不留神时间就飞速流逝了，头还是有点痛，有点<strong>《极乐disco》</strong>的意味了，我真的没什么空去玩游戏。。。。<br>我也应该冷静下来好好规划一下了。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/13/Seven13/" data-id="clyk5okqc00002kvd3tac6x8i" data-title="居家日记" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-backToYesterday" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/07/12/backToYesterday/" class="article-date">
-  <time class="dt-published" datetime="2024-07-12T13:15:10.000Z" itemprop="datePublished">2024-07-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/07/12/backToYesterday/">BackToYesterday</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><strong>注意</strong>：此篇内容不含有任何偏激情感。</p>
-<p>今天是暑假回家的第一天。<br>终于是在2024年7月11日买了一把吉他，狠狠的消费了2K+金币，也是我生活的第7457天，并不是一个特殊的日子，但是是我大二生活中最后一天在学校。<br>这把吉他的手感很好，我很喜欢，我的朋友们也很喜欢，很棒！<br>没想到父母这么果断直接地支持我的兴趣爱好，给了我2000块钱来买这把吉他，我爱他们。<br>这么一想我在暑假要做的事情就多了，每天应该会很充实（累）吧。<br><em><strong>去寻找生活的意义，累点其实也挺好的。</strong></em></p>
-<hr>
-<p>实际上我并没有去更新关于那个夏令营的最后一章内容，因为回来之后，就去找🐱🐱🐱（没错，这里是三个emoji表情）玩了，很幸福，很快乐。<br>连着打了三天的羽毛球，真的是简单易上手，被吸引到了。<br>临近回家的这几天吃喝玩乐了不少，当然也是快乐的陪伴。<br>终于是离开了天津，回到了故乡，暂时寻求一些安逸，以及灵魂的沉静。<br>希望我能成为<strong>guitar</strong>高手，加油！<br>一定要通过教资考试，这个是属于一个阶段的努力。</p>
-<hr>
-<p><strong>后记</strong>：🐱真是个很棒的人，具有很强烈的灵魂共鸣，多才多艺，自由洒脱，跳脱的思想也装着敢想敢做的生命活力，而且对计算机专业抱有很强的追求，虽然ta也偶尔比较迷茫，但是一定会得到自我救赎。窃以为认识其即大二生活中的最大收获（这么说有点类似于《史记》中最后的太史公曰了，有点不太好，但是必然是忍不住去讲这些东西的），难以想象假如以后突然失去联系将会有多么惆怅，也希望ta未来顺遂。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/12/backToYesterday/" data-id="clyir2y7g00009svdffm40uxz" data-title="BackToYesterday" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Think/" rel="tag">Think</a></li></ul>
-
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Julyeight" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/07/08/Julyeight/" class="article-date">
-  <time class="dt-published" datetime="2024-07-08T11:57:17.000Z" itemprop="datePublished">2024-07-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/07/08/Julyeight/">记七月五号的考研夏令营#其四</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>OK，最后一天，结算！</p>
-</blockquote>
-<p>玩爽了，吃爽了，睡爽了。<br>孩子很喜欢，就是地方有点偏了点。<br>早上起床了，随缘听了几耳朵的课，学了一手无限-无限的数学求极限，感觉挺好的，大意如下：<br><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><munder><mo data-mjx-texclass="OP" movablelimits="true">lim</mo><mrow><mi>x</mi><mo accent="false" stretchy="false">→</mo><mn>0</mn></mrow></munder><mroot><mrow><msup><mi>x</mi><mrow><mn>4</mn></mrow></msup><mo>+</mo><mn>3</mn><msup><mi>x</mi><mrow><mn>3</mn></mrow></msup></mrow><mn>3</mn></mroot><mo>−</mo><mroot><mrow><msup><mi>x</mi><mrow><mn>3</mn></mrow></msup><mo>+</mo><mi>x</mi></mrow><mn>4</mn></mroot></math><br>（上面公式可能在特殊浏览访问环境下看不到）这个式子结果是<strong>9</strong>，计算大意是找一个根号下的第二大的几次方，例如第一个根号下面是x的三次方，找到他们的项的系数，例子里面是3，然后系数乘几次根号，例子就是3乘3，后面的根号下也是这么算，应该找x的二次方，发现项数是0。所以9-0就得到了最终结果，理论上按照平常的做题方法，应当是得到9的。<strong>感觉是歪门邪道。</strong><br>中午再次爽吃<del>，也爽窜了</del>。</p>
-<hr>
-<p>下午自然醒的，感觉宣传大于真材实教。<br>晚上饭点勇探旁边的小镇超市，东西还是比较少的，也许是之前逛的都是比较大的商场。<br>晚上是联欢会，并做了一套考研数学的题，不会。。。<br>整了很大一块蛋糕吃了，认清了现实之后觉得自己没有理想。<br><strong>没有理想的人不伤心</strong><br>把这个挂在了一个鹤的雕塑的脖子上，哈哈，希望大家都能上岸！！<br>就写到这，明天再更新这个故事的最后一下。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/08/Julyeight/" data-id="clyczcl4m000064vd2gm450uq" data-title="记七月五号的考研夏令营#其四" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" rel="tag">考研夏令营</a></li></ul>
-
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Julyseven" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/07/07/Julyseven/" class="article-date">
-  <time class="dt-published" datetime="2024-07-07T11:43:48.000Z" itemprop="datePublished">2024-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/07/07/Julyseven/">记七月五号的考研夏令营#其三</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>爽逃！</p>
-</blockquote>
-<p>昨晚简单的<strong>EMO</strong>了一下。<br>今天早上睡到8点半以后了，去了之后，还是随便听了听课，讲的考研数学，制造焦虑，暗示报班。<br>数学题出的很好，多少会了点，但不多。现在开始准备考研的话，我认为还是为时过早。<br>中午爽吃了，然后美美的回宿舍躺了。<br>没啥好说的也。</p>
-<hr>
-<p>下午没去上课，逃了，自以为此次活动的宣传大于真才实学，故不为所动。<br>晚上在<strong>天才</strong>的引领下没吃到晚餐，买了两包干脆面随便吃了。实在是不想去参加课程，但是转念一想，如果不去又太过于无聊，遂明天还是去看看吧。<br>做做题总是好的。</p>
-<hr>
-<p><em>的确有些许焦虑，让子弹再飞一会</em></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/07/Julyseven/" data-id="clybhub5500002svd30dk0ceo" data-title="记七月五号的考研夏令营#其三" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" rel="tag">考研夏令营</a></li></ul>
-
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-julysix" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/07/06/julysix/" class="article-date">
-  <time class="dt-published" datetime="2024-07-06T11:31:03.000Z" itemprop="datePublished">2024-07-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/07/06/julysix/">记七月五号的考研夏令营#其二</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>书接上文，被拉来参加考研夏令营了。本来就没抱太大的期望。</p>
-</blockquote>
-<p>早上其实是被七点的敲门声吵醒了，醒了之后不参加早自习和早餐，逃掉了。（大学生的逃课经历居然是在这体现的）<br>然后狠狠的玩了手机在床上，其实到晚上也是处于了一种比较困的状态。<br>考研准备这么早的话，那我多少也是个很抽象的人吧。。。（所以我才不听话去早起自习呢！）</p>
-<hr>
-<p>上午的课是讲的考研英语，我们在8：40左右到了教室（昨天的那个地方，食堂二楼），讲的没啥劲，英语我也不怎么听其实，所以很无聊。<br>不听课，手机刷着也没劲，所以画画玩！蛮好的。</p>
-<img src="/2024/07/06/julysix/draw1.jpg" class>
-<img src="/2024/07/06/julysix/draw2.jpg" class>
-<p>发现教室门口的桌子是会刷新补充资源的（固定打野点位），有小面包、饼干、果冻，味道一般，但足以让没吃饭的属鼠大块朵颐（耶！抽象一点，多拿了一点拿回宿舍，明天当早餐！！！）</p>
-<hr>
-<p>中午饭被爆了15块钱，为了吃回来拼尽了全力。肉丸子整了四个，美其名曰：四喜丸子。damn。。。<br>发现餐桌上的纸抽，带回了宿舍，弥补了我们宿舍没有卫生纸的遗憾（这个纸抽，如厕有点难用，真的）。<br>然后就回宿舍睡觉了，其实这个时候约好了，说中午睡到自然醒然后再去上课，去Tamar的两点上课吧。<br>中午爽睡了，因为吃饱喝足（可不得爽睡嘛）。<br>一觉醒来，说是可以考教资报名了，我报了，高中数学，195，外加买了一套资料，128，一款3A大作的钱就这么没了，平常应该对自己好一点。</p>
-<hr>
-<p>下午自然醒，已经是两点半了，起床稍微整理了一下，带上了旁边宿舍志向相同的哥们，一块爽爽的去上着玩（在学校里我可不是这样的）。<br>下午英语课没听，下半场换了个老师讲择校<del>（传播考研焦虑）</del>。这个挺有意思的，老师像是有甲亢，挺好。<br>最终也没定夺个啥出来，其实自己就是很摆烂嘛，家里父母对自己期望也不大（其实是高中梦想的西安某计算机强校被老师点名了，有点心动，但是不是考408，有点模糊了）。其实如果就是考个本校也挺好的对吧？<br>下午的饭也挺好，总之是吃了3个馒头，两碗左右的米饭。</p>
-<hr>
-<p>晚上，他们开始推销价值1.8w的考研报班套餐了，我肯定是不报的就这样吧。<br>晚上说是晚自习，有点逆天，居然还有晚自习，逃回宿舍了，好像还有名师指点考研院校啥的，我就想考计算机，不想换行。<br>只能说太利益了这里，就这样随便的再玩两天回学校吧QWQ<br>玩了会游戏，写了个这个，就这样，挺好的。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/06/julysix/" data-id="clya5gfyz0000gwvd7jnbanfw" data-title="记七月五号的考研夏令营#其二" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" rel="tag">考研夏令营</a></li></ul>
-
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-julyfive" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/07/05/julyfive/" class="article-date">
-  <time class="dt-published" datetime="2024-07-05T14:11:16.000Z" itemprop="datePublished">2024-07-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/07/05/julyfive/">记七月五号的考研夏令营#其一</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>淦！绝赞99块钱3天的考研夏令营体验！（来之前我是这么认为的）</p>
-</blockquote>
-<p>想起来想考研，所以就寻思着去多了解一些考研的相关内容，结果就是报了这个99的某途考研的<strong>暑期夏令营</strong>。<br>然后在今天的下午就坐大巴来了，坐了得有一个钟头多，到达了津南区的不为人知的野地里的一家酒店，装修有点墙皮脱落，仿清朝风格建筑，有点让我不禁胆寒。<br>我承认我的腰子确实<em>微微一颤</em>（大巴车上收走了身份证说是开房用，也就是这个考研夏令营的宿舍，大巴途中还经过了国际机场）。</p>
-<hr>
-<p>这里就到了宿舍（酒店），还挺好的内部装修，基本上还是比较舒服的。<br>来到这里之后发现管住不管吃，封闭式的生活，晚上到了，六点多爆金币了，<strong>15块钱</strong>，哎哟我，为了吃回来，我努力的去炫（因为是自助）。</p>
-<hr>
-<p>吃完饭（味道还行，鸡蛋汤很好喝），上到了食堂二楼，开了会，讲的东西是什么玩意，zxf的那个b脸我不喜欢看，所以没听，狠狠的背了某词斩单词。<br>我旁边坐的哥们居然是唐山老乡，倍感欣慰。<br>然后的话，就到了很害怕的桥段，发了张卷子，把手机收上去了，害怕害怕害怕，所以我也没心情写英语卷子（6级过了，不想写）。<br>随便提前交了，然后爽玩了手机，发现自己真的受不了这种管理模式，B溃了。（然后就拼命思考是否该考研。。。）</p>
-<hr>
-<p><strong>总结</strong>:第一天有点难绷，感觉要似了，<em>扼杀了自身的自由气息</em>。看看接下来会有什么花活，听说要早读早起，所谓花钱坐牢，就是如此！！！</p>
-<p><em>另外无聊的时候摸鱼+偷偷学习golang。</em></p>
-<img src="/2024/07/05/julyfive/pkg.png" class>
-
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/05/julyfive/" data-id="cly9n95ew00026kvde50o2ypn" data-title="记七月五号的考研夏令营#其一" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" rel="tag">考研夏令营</a></li></ul>
-
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Exam" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/07/01/Exam/" class="article-date">
-  <time class="dt-published" datetime="2024-07-01T07:17:56.000Z" itemprop="datePublished">2024-07-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/07/01/Exam/">Exam</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>今天是2024年的7月1日，考试过了大概一半了，作为大二生的日子也只有最后的2天。</p>
-</blockquote>
-<p>今年的考试准备的还算比较稳妥，所以在摸鱼。<br>关于大二过完之后的暑假，感觉很需要好好的安排一下。<br>或许会找个实习？出去到其他地方玩玩似乎也不错，需要抓住这个暑假了。<br>大三好好学习，毕竟差不多是真正大学生涯的最后一年了，顺便一定要考个教资，再报几次六级考考。<br>加油吧，感觉依然还是很在状态的。</p>
-<hr>
-<p><em>请不要为先前的错误而难过，人是要面对未来的。</em></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/01/Exam/" data-id="cly9n95er00006kvd4tum61b0" data-title="Exam" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Think/" rel="tag">Think</a></li></ul>
-
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-photo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/06/11/photo/" class="article-date">
-  <time class="dt-published" datetime="2024-06-11T13:17:24.000Z" itemprop="datePublished">2024-06-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/06/11/photo/">photo</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <img src="/2024/06/11/photo/photo.jpg" class>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/06/11/photo/" data-id="cly9n95ey00046kvd77s2hplp" data-title="photo" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-        
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/photoTest/" rel="tag">photoTest</a></li></ul>
-
-	  <!-- busuanzi_count -->
-
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
-
-<!-- busuanzi_count -->
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Think/" rel="tag">Think</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/photoTest/" rel="tag">photoTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" rel="tag">考研夏令营</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Think/" style="font-size: 15px;">Think</a> <a href="/tags/photoTest/" style="font-size: 10px;">photoTest</a> <a href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/" style="font-size: 20px;">考研夏令营</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">八月 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/07/">七月 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">六月 2024</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2024/08/19/lateAug19/">End &amp; Start</a>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
           </li>
+          
         
-          <li>
-            <a href="/2024/07/13/Seven13/">居家日记</a>
-          </li>
         
-          <li>
-            <a href="/2024/07/12/backToYesterday/">BackToYesterday</a>
-          </li>
-        
-          <li>
-            <a href="/2024/07/08/Julyeight/">记七月五号的考研夏令营#其四</a>
-          </li>
-        
-          <li>
-            <a href="/2024/07/07/Julyseven/">记七月五号的考研夏令营#其三</a>
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
     </div>
   </div>
+</nav>
 
   
-</aside>
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="An elegant Material-Design theme for Hexo"></span>
+          
+        </div>
+
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
+
       
-      &copy; 2024 Xiangyao<br>
-	  <!-- busuanzi_count -->
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
       
-      本站总访问量<span id="busuanzi_value_site_pv"></span>次
-      本站访客数<span id="busuanzi_value_site_uv"></span>人次<br>
-      
-      <!-- busuanzi_count -->
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
-</footer>
+</div>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/about" class="mobile-nav-link">About</a>
-  
-</nav>
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/08/19/lateAug19/" target="_self">
+          End &amp; Start
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/08/19/lateAug19/" target="_self">
+        <div>
+          许久没有去写文字，是因为每次思考都在睡前，而我又没有在睡前记住要写些什么的习惯。  现在已经是暑假在家的最后一天了，其实还是有些迷茫和无助的，不过更多的是以往很常见的离家的怅惘。我几乎一整个暑假都没出去玩，老老实实的在家呆着，既不能说我没有活力，更不能说我喜欢在家里呆着，在这种环境下，难免感觉自己什么地方都没有勇气去追寻。不过也还好，至少也并非是无助的孤岛，至少可以通过各种线上方式与好友交流，解决
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-08-19 20:57" pubdate>
+              2024-08-19
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Think/">#Think</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/13/Seven13/" target="_self">
+          居家日记
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/13/Seven13/" target="_self">
+        <div>
+          今天是完完全全在家的第一天，感觉良好，除了自己脑袋总是略微疼痛，似乎睡觉也不能缓解。这个文章就不加tag了，纯粹的碎碎念。整天呆在家确实有点无聊，不过需要干的事情也不少，可以容忍。蛮好的，每次吃饭吃的都是自家院子里生长的作物，还看到了我那两个抽象的老弟。一不留神时间就飞速流逝了，头还是有点痛，有点《极乐disco》的意味了，我真的没什么空去玩游戏。。。。我也应该冷静下来好好规划一下了。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-13 21:16" pubdate>
+              2024-07-13
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/12/backToYesterday/" target="_self">
+          BackToYesterday
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/12/backToYesterday/" target="_self">
+        <div>
+          注意：此篇内容不含有任何偏激情感。 今天是暑假回家的第一天。终于是在2024年7月11日买了一把吉他，狠狠的消费了2K+金币，也是我生活的第7457天，并不是一个特殊的日子，但是是我大二生活中最后一天在学校。这把吉他的手感很好，我很喜欢，我的朋友们也很喜欢，很棒！没想到父母这么果断直接地支持我的兴趣爱好，给了我2000块钱来买这把吉他，我爱他们。这么一想我在暑假要做的事情就多了，每天应该会很充实（
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-12 21:15" pubdate>
+              2024-07-12
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Think/">#Think</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/08/Julyeight/" target="_self">
+          记七月五号的考研夏令营#其四
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/08/Julyeight/" target="_self">
+        <div>
+          OK，最后一天，结算！  玩爽了，吃爽了，睡爽了。孩子很喜欢，就是地方有点偏了点。早上起床了，随缘听了几耳朵的课，学了一手无限-无限的数学求极限，感觉挺好的，大意如下：limx→0x4+3x33−x3+x4（上面公式可能在特殊浏览访问环境下看不到）这个式子结果是9，计算大意是找一个根号下的第二大的几次方，例如第一个根号下面是x的三次方，找到他们的项的系数，例子里面是3，然后系数乘几次根号，例子就
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-08 19:57" pubdate>
+              2024-07-08
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/">#考研夏令营</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/07/Julyseven/" target="_self">
+          记七月五号的考研夏令营#其三
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/07/Julyseven/" target="_self">
+        <div>
+          爽逃！  昨晚简单的EMO了一下。今天早上睡到8点半以后了，去了之后，还是随便听了听课，讲的考研数学，制造焦虑，暗示报班。数学题出的很好，多少会了点，但不多。现在开始准备考研的话，我认为还是为时过早。中午爽吃了，然后美美的回宿舍躺了。没啥好说的也。  下午没去上课，逃了，自以为此次活动的宣传大于真才实学，故不为所动。晚上在天才的引领下没吃到晚餐，买了两包干脆面随便吃了。实在是不想去参加课程，但是
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-07 19:43" pubdate>
+              2024-07-07
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/">#考研夏令营</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/06/julysix/" target="_self">
+          记七月五号的考研夏令营#其二
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/06/julysix/" target="_self">
+        <div>
+          书接上文，被拉来参加考研夏令营了。本来就没抱太大的期望。  早上其实是被七点的敲门声吵醒了，醒了之后不参加早自习和早餐，逃掉了。（大学生的逃课经历居然是在这体现的）然后狠狠的玩了手机在床上，其实到晚上也是处于了一种比较困的状态。考研准备这么早的话，那我多少也是个很抽象的人吧。。。（所以我才不听话去早起自习呢！）  上午的课是讲的考研英语，我们在8：40左右到了教室（昨天的那个地方，食堂二楼），讲
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-06 19:31" pubdate>
+              2024-07-06
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/">#考研夏令营</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/05/julyfive/" target="_self">
+          记七月五号的考研夏令营#其一
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/05/julyfive/" target="_self">
+        <div>
+          淦！绝赞99块钱3天的考研夏令营体验！（来之前我是这么认为的）  想起来想考研，所以就寻思着去多了解一些考研的相关内容，结果就是报了这个99的某途考研的暑期夏令营。然后在今天的下午就坐大巴来了，坐了得有一个钟头多，到达了津南区的不为人知的野地里的一家酒店，装修有点墙皮脱落，仿清朝风格建筑，有点让我不禁胆寒。我承认我的腰子确实微微一颤（大巴车上收走了身份证说是开房用，也就是这个考研夏令营的宿舍，大
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-05 22:11" pubdate>
+              2024-07-05
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%80%83%E7%A0%94%E5%A4%8F%E4%BB%A4%E8%90%A5/">#考研夏令营</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/01/Exam/" target="_self">
+          Exam
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/01/Exam/" target="_self">
+        <div>
+          今天是2024年的7月1日，考试过了大概一半了，作为大二生的日子也只有最后的2天。  今年的考试准备的还算比较稳妥，所以在摸鱼。关于大二过完之后的暑假，感觉很需要好好的安排一下。或许会找个实习？出去到其他地方玩玩似乎也不错，需要抓住这个暑假了。大三好好学习，毕竟差不多是真正大学生涯的最后一年了，顺便一定要考个教资，再报几次六级考考。加油吧，感觉依然还是很在状态的。  请不要为先前的错误而难过，人
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-01 15:17" pubdate>
+              2024-07-01
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Think/">#Think</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/06/11/photo/" target="_self">
+          photo
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/06/11/photo/" target="_self">
+        <div>
+          
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-06-11 21:17" pubdate>
+              2024-06-11
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/photoTest/">#photoTest</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
 
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 
 
-<script src="/js/script.js"></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
 
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
 
-
-
-  </div>
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
 </body>
 </html>
